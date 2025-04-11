@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -61,6 +60,8 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
       text-align: left;
       transition: transform 0.3s ease;
+      flex: 1 1 260px;
+      max-width: 100%;
     }
 
     .card:hover {
@@ -112,6 +113,24 @@
 
     .contact-info p {
       margin: 5px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      header p {
+        font-size: 1em;
+      }
+
+      .card {
+        width: 100%;
+      }
+
+      .container {
+        padding: 20px 10px;
+      }
     }
   </style>
 </head>
